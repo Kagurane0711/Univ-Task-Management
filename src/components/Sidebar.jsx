@@ -40,7 +40,8 @@ export default function Sidebar() {
     { id: 'matrix', label: 'Priority Matrix', icon: LayoutGrid },
     { id: 'timeline', label: 'Deadline Forecast', icon: Clock },
     { id: 'gpa', label: 'GPA Forecaster', icon: Calculator },
-    { id: 'analytics', label: 'Study Analytics', icon: BarChart3 }
+    { id: 'analytics', label: 'Study Analytics', icon: BarChart3 },
+    { id: 'profile', label: 'Biodata & Profil', icon: User }
   ];
 
   return (
@@ -113,15 +114,24 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Bottom Profile & Utilities */}
-      <div className="p-4 border-t border-slate-200/80 dark:border-slate-800/80 space-y-3">
-        <div className="flex items-center gap-3 rounded-xl bg-slate-50 p-2.5 dark:bg-slate-850/80 border border-slate-100 dark:border-slate-800">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300 font-bold text-sm">
-            {profile.name.split(' ').map(n => n[0]).join('')}
+      {/* Bottom Profile & Utilities (Stuck to bottom) */}
+      <div className="sticky bottom-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-4 border-t border-slate-200/80 dark:border-slate-800/80 space-y-3 z-10">
+        <div
+          onClick={() => setActiveTab('profile')}
+          title="Buka Halaman Biodata & Profil"
+          className={`flex items-center gap-3 rounded-xl p-2.5 border cursor-pointer transition ${
+            activeTab === 'profile'
+              ? 'bg-indigo-50 border-indigo-300 dark:bg-indigo-950/60 dark:border-indigo-800 ring-2 ring-indigo-500/20'
+              : 'bg-slate-50 dark:bg-slate-850/80 border-slate-100 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-700'
+          }`}
+        >
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white font-bold text-sm shadow-sm">
+            {profile.name ? profile.name.split(' ').slice(0, 2).map(n => n[0]).join('') : 'FA'}
           </div>
           <div className="min-w-0 flex-1">
-            <div className="truncate text-xs font-bold text-slate-800 dark:text-slate-100">
-              {profile.name}
+            <div className="truncate text-xs font-bold text-slate-800 dark:text-slate-100 flex items-center justify-between">
+              <span className="truncate">{profile.name}</span>
+              <span className="text-[10px] text-indigo-500 font-semibold ml-1">Edit</span>
             </div>
             <div className="truncate text-[11px] text-slate-400">
               {profile.major}

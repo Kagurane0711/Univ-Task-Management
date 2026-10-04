@@ -5,6 +5,7 @@ import {
   CheckSquare, 
   BookOpen, 
   CalendarDays,
+  User,
   Menu
 } from 'lucide-react';
 import { useTasks } from '../context/TaskContext';
@@ -16,9 +17,9 @@ export default function MobileNav() {
   const tabs = [
     { id: 'dashboard', label: 'Home', icon: LayoutDashboard },
     { id: 'kanban', label: 'Kanban', icon: KanbanSquare, badge: pendingCount },
-    { id: 'tasks', label: 'Tasks', icon: CheckSquare },
-    { id: 'courses', label: 'Courses', icon: BookOpen },
-    { id: 'timetable', label: 'Schedule', icon: CalendarDays },
+    { id: 'tasks', label: 'Tugas', icon: CheckSquare },
+    { id: 'timetable', label: 'Jadwal', icon: CalendarDays },
+    { id: 'profile', label: 'Profil', icon: User }
   ];
 
   return (

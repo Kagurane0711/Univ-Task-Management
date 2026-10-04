@@ -12,14 +12,25 @@ function getRelativeDate(offsetDays, hours = 23, minutes = 59) {
 export const initialProfile = {
   name: "Fachri Alamsyah, S.E.",
   email: "fachri.alamsyah@untirta.ac.id",
+  phone: "0812-8923-7718",
+  gender: "Laki-laki",
+  birthPlaceDate: "Serang, 14 Juli 1999",
+  address: "Jl. Raya Serang - Pandeglang Km. 4, Cipocok Jaya, Kota Serang, Banten 42121",
   university: "Universitas Sultan Ageng Tirtayasa",
   faculty: "Fakultas Ekonomi dan Bisnis (FEB)",
   major: "S2 Magister Manajemen (MM)",
   studentId: "7771240018",
   currentSemester: "Semester 2 (T.A. 2026/2027)",
+  entryYear: "2026 (Angkatan 24 Pascasarjana)",
+  targetGraduation: "Juli 2027 (3 Semester / Fast Track)",
   targetGpa: 3.90,
   creditGoal: 15,
-  concentration: "Manajemen Stratejik & Bisnis Digital"
+  concentration: "Manajemen Stratejik & Bisnis Digital",
+  advisor1: "Prof. Dr. H. Tubagus Ismail, S.E., M.M., Ak., CA.",
+  advisor2: "Dr. Sugeng Setyadi, S.E., M.Si.",
+  thesisTitle: "Pengaruh Dynamic Capabilities dan Transformasi Digital terhadap Keunggulan Bersaing Berkelanjutan pada Industri Manufaktur di Kawasan Banten",
+  targetJournal: "Jurnal Manajemen & Bisnis Terindeks SINTA 2 / Scopus Q2",
+  bio: "Mahasiswa Program Pascasarjana S2 Magister Manajemen Untirta dengan fokus riset pada Corporate Strategy, Supply Chain Resiliency, dan Digital Transformation Industri Banten."
 };
 
 export const initialCourses = [

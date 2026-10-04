@@ -22,6 +22,8 @@ export default function Navbar() {
     courses, 
     tasks, 
     openCreateTaskModal, 
+    activeTab,
+    setActiveTab,
     setIsSearchOpen, 
     setIsExportOpen,
     setIsPomodoroOpen 
@@ -112,6 +114,22 @@ export default function Navbar() {
           ) : (
             <Moon className="h-4 w-4 text-slate-600" />
           )}
+        </button>
+
+        {/* Profile Avatar Trigger */}
+        <button
+          onClick={() => setActiveTab('profile')}
+          title="Buka Biodata & Profil Mahasiswa"
+          className={`flex items-center gap-2 rounded-xl border p-1 sm:px-2.5 sm:py-1.5 transition ${
+            activeTab === 'profile'
+              ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 font-bold ring-2 ring-indigo-500/20'
+              : 'border-slate-200 bg-white hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-850 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200'
+          }`}
+        >
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold shadow-sm">
+            {profile.name ? profile.name.split(' ').slice(0, 2).map(n => n[0]).join('') : 'FA'}
+          </div>
+          <span className="hidden xl:inline text-xs font-semibold max-w-[110px] truncate">{profile.name}</span>
         </button>
 
         {/* New Task Button */}

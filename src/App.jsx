@@ -14,6 +14,7 @@ import EisenhowerMatrix from './components/Tasks/EisenhowerMatrix';
 import TimelineView from './components/Tasks/TimelineView';
 import GpaCalculator from './components/Gpa/GpaCalculator';
 import StudyAnalytics from './components/Analytics/StudyAnalytics';
+import ProfilePage from './components/Profile/ProfilePage';
 
 // Modals
 import TaskModal from './components/Tasks/TaskModal';
@@ -46,6 +47,7 @@ function MainApp() {
           {activeTab === 'timeline' && <TimelineView />}
           {activeTab === 'gpa' && <GpaCalculator />}
           {activeTab === 'analytics' && <StudyAnalytics />}
+          {activeTab === 'profile' && <ProfilePage />}
         </main>
       </div>
 
