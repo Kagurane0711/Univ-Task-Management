@@ -1,6 +1,6 @@
-# UniTask — University Academic Task & Course Manager
+# UniTask — S2 Magister Manajemen Universitas Sultan Ageng Tirtayasa (UNTIRTA)
 
-**UniTask** is a modern, responsive, and full-featured academic productivity application designed specifically for university students, teaching assistants, and learners. It balances academic rigor (syllabus weightings, credit hours, 4.0 GPA scales) with daily task agility (Kanban, Pomodoro study focus with Web Audio ambient noise, interactive weekly schedule, and 14-day deadline forecasting).
+**UniTask** adalah sistem manajemen tugas, jadwal, dan progres akademik pascasarjana yang dirancang khusus untuk mahasiswa **S2 Magister Manajemen (MM) Fakultas Ekonomi dan Bisnis (FEB) Universitas Sultan Ageng Tirtayasa (UNTIRTA)**. Sistem ini mengintegrasikan pemantauan bobot silabus mata kuliah, studi kasus bisnis, review jurnal Scopus, kolokium proposal tesis, jadwal perkuliahan eksekutif (Jumat & Sabtu), serta kalkulator simulasi IPK dan ekspor kalender iCal.
 
 ---
 

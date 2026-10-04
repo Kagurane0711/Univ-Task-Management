@@ -43,7 +43,7 @@ export default function Navbar() {
               UniTask
             </span>
             <span className="rounded-md bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-600 dark:bg-indigo-950/70 dark:text-indigo-400">
-              Campus v1.0
+              S2 MM Untirta
             </span>
           </div>
           <p className="text-xs text-slate-500 dark:text-slate-400 leading-none">

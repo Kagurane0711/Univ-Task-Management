@@ -5,7 +5,7 @@ import { soundEngine } from '../utils/audio';
 
 const TaskContext = createContext();
 
-const STORAGE_KEY = 'unitask_academic_data_v1';
+const STORAGE_KEY = 'unitask_untirta_mm_v1';
 
 export function TaskProvider({ children }) {
   // Theme state

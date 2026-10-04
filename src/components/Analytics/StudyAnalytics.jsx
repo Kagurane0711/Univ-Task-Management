@@ -207,10 +207,10 @@ export default function StudyAnalytics() {
                 <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                 <div className="text-xs">
                   <div className="font-bold text-amber-900 dark:text-amber-200">
-                    High-Yield Alert: Algorithms & Database
+                    Prioritas Riset: Proposal Tesis & Studi Kasus Krakatau Steel
                   </div>
                   <p className="mt-1 text-amber-700 dark:text-amber-300/90 leading-relaxed">
-                    You have 2 heavy assignments due this week contributing 10% to your final grades. Focus on dynamic programming first to secure full marks.
+                    Terdapat 2 deliverable krusial pekan ini: Matriks Research Gap Tesis Bab 1 dan Studi Kasus Manajemen Stratejik dengan bobot total 25% nilai semester.
                   </p>
                 </div>
               </div>
@@ -221,10 +221,10 @@ export default function StudyAnalytics() {
                 <Flame className="h-4 w-4 text-indigo-600 shrink-0 mt-0.5" />
                 <div className="text-xs">
                   <div className="font-bold text-indigo-900 dark:text-indigo-200">
-                    Optimal Study Pace
+                    Ritme Belajar Pascasarjana Terjadwal
                   </div>
                   <p className="mt-1 text-indigo-700 dark:text-indigo-300/90 leading-relaxed">
-                    You've averaged 45 minutes per focus block. Try spacing two 25-minute Pomodoro sessions tomorrow before your afternoon Database Lab.
+                    Sesi kuliah intensif Jumat sore & Sabtu. Alokasikan 2 blok fokus 25 menit di hari kerja untuk review artikel Scopus dan olah data SmartPLS.
                   </p>
                 </div>
               </div>
@@ -235,10 +235,10 @@ export default function StudyAnalytics() {
                 <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
                 <div className="text-xs">
                   <div className="font-bold text-emerald-900 dark:text-emerald-200">
-                    GPA Trajectory On Target
+                    Target Predikat Dengan Pujian (Cum Laude)
                   </div>
                   <p className="mt-1 text-emerald-700 dark:text-emerald-300/90 leading-relaxed">
-                    Your current projected 3.82 GPA exceeds the Dean's List threshold (3.50). Maintaining current scores guarantees Latin honors standing.
+                    Proyeksi IPK saat ini ({profile.targetGpa.toFixed(2)}) memenuhi standar kelulusan Cum Laude Pascasarjana Untirta (IPK ≥ 3.75). Pertahankan capaian nilai A.
                   </p>
                 </div>
               </div>
